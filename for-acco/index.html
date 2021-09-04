@@ -1,0 +1,157 @@
+<html>
+
+<style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        background: #222;
+    }
+
+    body {
+        margin: 80px;
+        position: relative;
+    }
+
+    div {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+        cursor: pointer;
+    }
+
+    div::after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+        background: transparent;
+    }
+
+    div:hover::after {
+        background: rgba(255, 191, 31, 0.5);
+    }
+
+    button {
+        position: relative;
+        top: -40px;
+        left: -40px;
+    }
+</style>
+
+<body onload="start()" id="body">
+    <button onclick="reset()">Reset</button>
+</body>
+
+<script>
+    const tileSize = 40;
+    const url = `./result-${tileSize}.jpg`;
+
+    let nextZIndex = 1;
+    let width = 0;
+    let height = 0;
+
+    function reset() {
+        localStorage.clear();
+        for (let i = 0; i < width / tileSize; i++) {
+            for (let j = 0; j < height / tileSize; j++) {
+                const div = document.getElementById(`${i}x${j}`);
+                div.style.left = `${i * tileSize}px`;
+                div.style.top = `${j * tileSize}px`;
+            }
+        }
+    }
+
+    function getMeta(url, callback) {
+        var img = new Image();
+        img.src = url;
+        img.onload = function () { callback(img, img.width, img.height); }
+    }
+
+    function start() {
+        getMeta(
+            url,
+            function (image, w, h) {
+                width = w;
+                height = h;
+                for (let i = 0; i < width / tileSize; i++) {
+                    for (let j = 0; j < height / tileSize; j++) {
+                        const div = document.createElement('div');
+                        div.style.width = `${tileSize}px`;
+                        div.style.height = `${tileSize}px`;
+                        div.style.position = "absolute";                       
+                        div.style.left = `${i * tileSize}px`;
+                        div.style.top = `${j * tileSize}px`;
+                        div.style.backgroundImage = `url(${url})`
+                        div.style.backgroundPosition = `${-i * tileSize}px ${-j * tileSize}px`;
+                        div.style.backgroundSize = 'auto';
+                        div.id = `${i}x${j}`;
+
+                        const t = localStorage.getItem(`${div.id}-top`);
+                        const l = localStorage.getItem(`${div.id}-left`);
+
+                        if (t != null && l != null) {
+                            div.style.left = `${l}`;
+                            div.style.top = `${t}`;
+                        }
+
+                        document.getElementById('body').appendChild(div);
+                        dragElement(div);
+                    }
+                }
+            }
+        );
+    }
+
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            // if present, the header is where you move the DIV from:
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+            // otherwise, move the DIV from anywhere inside the DIV:
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+            elmnt.style.zIndex = nextZIndex;
+            nextZIndex++;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            localStorage.setItem(`${elmnt.id}-top`, elmnt.style.top);
+            localStorage.setItem(`${elmnt.id}-left`, elmnt.style.left);
+        }
+
+        function closeDragElement() {
+            // stop moving when mouse button is released:
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+</script>
+
+</html>

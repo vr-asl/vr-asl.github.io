@@ -34,7 +34,7 @@
             margin: 0;
         }
 
-        #speed, #speed_mph, #altitude, #time {
+        #speed, #speed_mph, #altitude, #time, #distance, #time_passed, #distance_m {
             position: absolute;
             left: 10px;
             color: var(--color-4);
@@ -45,19 +45,31 @@
         }
 
         #time {
-            top: calc(var(--map-height) + 10px + 0 * 40px);
+            top: calc(var(--map-height) + 10px + 0 * 40px + 0 * 20px);
         }
 
         #speed {
-            top: calc(var(--map-height) + 10px + 1 * 40px);
+            top: calc(var(--map-height) + 10px + 1 * 40px + 1 * 20px);
         }
 
         #speed_mph {
-            top: calc(var(--map-height) + 10px + 2 * 40px);
+            top: calc(var(--map-height) + 10px + 2 * 40px + 1 * 20px);
+        }
+
+        #time_passed {
+            top: calc(var(--map-height) + 10px + 3 * 40px + 2 * 20px);
+        }
+
+        #distance {
+            top: calc(var(--map-height) + 10px + 4 * 40px + 2 * 20px);
+        }
+
+        #distance_m {
+            top: calc(var(--map-height) + 10px + 5 * 40px + 2 * 20px);
         }
 
         #altitude {
-            top: calc(var(--map-height) + 10px + 3 * 40px);
+            top: calc(var(--map-height) + 10px + 6 * 40px + 2 * 20px);
         }
 
         #map {
@@ -102,6 +114,9 @@
 <body>
 <div id="player"></div>
 <div id="time"></div>
+<div id="time_passed"></div>
+<div id="distance"></div>
+<div id="distance_m"></div>
 <div id="speed"></div>
 <div id="speed_mph"></div>
 <div id="altitude"></div>
@@ -197,11 +212,27 @@
         }
     }
 
+    function distance(lat1, lon1, lat2, lon2) {
+        const R = 6371e3; // metres
+        const l1 = lat1 * Math.PI/180; // φ, λ in radians
+        const l2 = lat2 * Math.PI/180;
+        const dLat = (lat2-lat1) * Math.PI/180;
+        const dLon = (lon2-lon1) * Math.PI/180;
+
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(l1) * Math.cos(l2) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+        return R * c; // in metres
+    }
+
     fetchData(videoIndex);
 
     let line;
     function animationFrame() {
         const path = [];
+        let dist = 0;
 
         if (player && player.getCurrentTime && player.getPlayerState && player.getPlayerState() === 1) {
             const time = player.getCurrentTime() * 1000;
@@ -218,14 +249,23 @@
                 } else {
                     if (!isNaN(pos.lat) && !isNaN(pos.lng)) {
                         path.push(pos);
+
+                        const d1 = path[path.length - 1];
+                        const d2 = path[path.length - 2];
+
+                        if (d1 && d2) {
+                            dist += distance(d1.lat, d1.lng, d2.lat, d2.lng);
+                        }
                     }
                 }
             }
 
             if (current) {
                 document.getElementById('speed').innerHTML = `${Math.round(current.Speed * 3.6)} km/h`;
-                document.getElementById('speed_mph').innerHTML = `${Math.round(current.Speed * 3.6 * 0.621371192)} m/h`
+                document.getElementById('speed_mph').innerHTML = `${Math.round(current.Speed * 3.6 * 0.621371192)} mi/h`
                 document.getElementById('altitude').innerHTML = `${Math.round(current.Altitude)} m`
+                document.getElementById('distance').innerHTML = `${(dist / 1000).toFixed(2)} km`
+                document.getElementById('distance_m').innerHTML = `${(dist / 1000 * 0.621371192).toFixed(2)} mi`
 
                 const startTime = videos[videoIndex].time.h * 60 * 60 + videos[videoIndex].time.m * 60;
                 const currentTime = (startTime + (time * videos[videoIndex].speed / 1000)) / 60;
@@ -233,6 +273,11 @@
                 const minutes = Math.floor(currentTime - hours * 60);
 
                 document.getElementById('time').innerHTML = `${hours % 24}:${minutes < 10 ? '0' : ''}${minutes % 60}`
+
+                const timePassed = time * videos[videoIndex].speed / 1000 / 60;
+                const hours_passed = Math.floor(timePassed / 60);
+                const minutes_passed = Math.floor(timePassed - hours_passed * 60);
+                document.getElementById('time_passed').innerHTML = `${hours_passed}:${minutes_passed < 10 ? '0' : ''}${minutes_passed % 60}`
 
                 if (line) {
                     line.setPath(path);

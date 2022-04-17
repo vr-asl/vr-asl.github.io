@@ -179,11 +179,13 @@ html {
     font-family: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace;
     pointer-events: none;
     z-index: 101;
+    background: rgba(0,0,0,0.6);
+    padding: 0 4px;
 }
 
 #menu .video-tile .speed-text {
     right: 8px;
-    bottom: 19px;
+    bottom: 22px;
 }
 
 #menu .video-tile .time-text {
@@ -198,7 +200,7 @@ html {
 
 #menu .video-tile .distance-text {
     left: 8px;
-    bottom: 19px;
+    bottom: 22px;
 }
 
 #menu .video-tile .distance-mi-text {

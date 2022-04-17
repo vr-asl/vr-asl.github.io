@@ -122,6 +122,9 @@ async function prepareMenu() {
     }
 
     map.fitBounds(bounds, 50);
+
+    document.getElementById('stuff').classList.remove('loading');
+    document.getElementById('loader').remove();
 }
 
 startPromise.then(() => prepareMenu());

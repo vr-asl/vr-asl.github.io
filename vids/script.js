@@ -1,5 +1,4 @@
 const videoIndex = parseInt((document.location.hash || '').substring(1, 1000));
-let map;
 
 const SKIP_FIRST_X_GPS = 250;
 
@@ -62,21 +61,4 @@ function distance(lat1, lon1, lat2, lon2) {
     return R * c; // in metres
 }
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 3,
-        center: { lat: 0, lng: -180 },
-        mapTypeId: 'satellite',
-        tilt: 45,
-        disableDefaultUI: true,
-        keyboardShortcuts: false,
-    });
 
-    startResolve();
-}
-
-let startResolve;
-const startPromise = new Promise(resolve => {
-    startResolve = resolve;
-});
-window.initMap = initMap;

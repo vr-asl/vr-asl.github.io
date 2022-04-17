@@ -2,8 +2,12 @@
 <html lang="en">
     <head>
         <title>Pog videos</title>
-        <link rel="stylesheet" href="styles.css">
+        <link
+            rel="stylesheet"
+            href="styles.css"
+        />
 
+        <script src="init-map.js"></script>
         <script
             async
             defer
@@ -12,18 +16,42 @@
         <script src="videos.js"></script>
     </head>
     <body>
-        <div id="player"></div>
-        <div id="time"></div>
-        <div id="time_passed"></div>
-        <div id="distance"></div>
-        <div id="distance_m"></div>
-        <div id="speed"></div>
-        <div id="speed_mph"></div>
-        <div id="altitude"></div>
-        <div id="map"></div>
-        <div id="menu"></div>
+        <div
+            id="stuff"
+            class="loading"
+        >
+            <div id="player"></div>
+            <div id="time"></div>
+            <div id="time_passed"></div>
+            <div id="distance"></div>
+            <div id="distance_m"></div>
+            <div id="speed"></div>
+            <div id="speed_mph"></div>
+            <div id="altitude"></div>
+            <div id="map"></div>
+            <div id="menu"></div>
+        </div>
 
-        <a id="to-menu" href="?x=0">Video List</a>
+        <div id="loader">
+            <div class="example">
+                <div class="block">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </div>
+
+        <a
+            id="to-menu"
+            href="?x=0"
+            >Video List</a
+        >
 
         <script src="script.js"></script>
         <script src="script-player.js"></script>

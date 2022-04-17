@@ -117,6 +117,9 @@ function prepareVideo() {
     }
 
     setInterval(() => animationFrame(), 100);
+
+    document.getElementById('stuff').classList.remove('loading');
+    document.getElementById('loader').remove();
 }
 
 startPromise.then(() => prepareVideo());

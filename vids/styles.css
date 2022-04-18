@@ -172,15 +172,23 @@ html {
 #menu .video-tile .time-text,
 #menu .video-tile .distance-text,
 #menu .video-tile .date-text,
-#menu .video-tile .distance-mi-text {
+#menu .video-tile .distance-mi-text,
+#menu .video-tile .type-text {
     position: absolute;
     color: var(--color-5);
     font-size: 14px;
-    font-family: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace;
     pointer-events: none;
     z-index: 101;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 0 4px;
+}
+
+#menu .video-tile .speed-text,
+#menu .video-tile .time-text,
+#menu .video-tile .distance-text,
+#menu .video-tile .date-text,
+#menu .video-tile .distance-mi-text {
+    font-family: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace;
 }
 
 #menu .video-tile .speed-text {
@@ -191,6 +199,12 @@ html {
 #menu .video-tile .time-text {
     right: 8px;
     bottom: 5px;
+}
+
+#menu .video-tile .type-text {
+    left: 8px;
+    top: 5px;
+    padding: 2px 4px;
 }
 
 #menu .video-tile .date-text {

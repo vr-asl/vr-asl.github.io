@@ -30,7 +30,7 @@ async function prepareMenu() {
         const path = [];
         let dist = 0;
 
-        for (let j = SKIP_FIRST_X_GPS; j < data[i].gps.length; j++) {
+        for (let j = SKIP_FIRST_X_GPS + (data[i].gpsAdditionalSkip || 0); j < data[i].gps.length; j++) {
             const lat = parseFloat(data[i].gps[j].Latitude);
             const lng = parseFloat(data[i].gps[j].Longitude);
 
@@ -92,6 +92,25 @@ async function prepareMenu() {
         dateText.classList.add('date-text');
         dateText.innerHTML = `${data[i].date}`
         btn.append(dateText);
+
+        const typeText = document.createElement('i');
+        typeText.classList.add('type-text');
+        typeText.classList.add('fa-solid');
+        switch (data[i].type) {
+            case 'bicycle':
+                typeText.classList.add('fa-person-biking');
+                break;
+            case 'walking':
+                typeText.classList.add('fa-person-walking');
+                break;
+            case 'unicycle':
+                typeText.classList.add('fa-tire');
+                break;
+            default:
+                typeText.classList.add('fa-question');
+                break;
+        }
+        btn.append(typeText);
 
         const speedText = document.createElement('div');
         speedText.classList.add('speed-text');

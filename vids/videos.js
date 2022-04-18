@@ -2,6 +2,7 @@ const videos = [
     {
         id: 'PqbrN1OLqfY',
         date: '15.4.2022',
+        type: 'bicycle',
         speed: 5,
         length: 13 * 60 + 41,
         time: {
@@ -26,6 +27,7 @@ const videos = [
     {
         id: 'zhMleQzp2g8',
         date: '16.4.2022',
+        type: 'bicycle',
         speed: 2,
         length: 27 * 60 + 27,
         time: {
@@ -62,6 +64,7 @@ const videos = [
     {
         id: '0VFD4LT2jLA',
         date: '17.4.2022',
+        type: 'bicycle',
         speed: 2,
         length: 47 * 60 + 33,
         time: {
@@ -122,6 +125,7 @@ const videos = [
     {
         id: 'qC1VRuFfAVk',
         date: '17.4.2022',
+        type: 'bicycle',
         speed: 2,
         length: 27 * 60 + 57,
         time: {
@@ -155,4 +159,74 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'vEuXWuqe1gQ',
+        date: '18.4.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 52 * 60 + 55,
+        time: {
+            h: 16,
+            m: 31,
+        },
+        gpsAdditionalSkip: 330,
+        data: [
+            {
+                file: 'data/5a.csv',
+                time: 0,
+            },
+            {
+                file: 'data/5b.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/5c.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/5d.csv',
+                time: 5 * 60 + 19,
+            },
+            {
+                file: 'data/5e.csv',
+                time: 2 * 60 + 8,
+                timeIrl: {
+                    h: 17,
+                    m: 11,
+                },
+            },
+            {
+                file: 'data/5f.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/5g.csv',
+                time: 2 * 60 + 20,
+                timeIrl: {
+                    h: 17,
+                    m: 31,
+                },
+            },
+            {
+                file: 'data/5h.csv',
+                time: 5 * 60 + 19,
+            },
+            {
+                file: 'data/5i.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/5j.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/5k.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/5l.csv',
+                time: 5 * 60 + 21,
+            },
+        ],
+    }
 ];

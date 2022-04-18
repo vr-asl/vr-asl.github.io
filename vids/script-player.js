@@ -41,7 +41,7 @@ function prepareVideo() {
         if (player && player.getCurrentTime && player.getPlayerState && player.getPlayerState() === 1) {
             const time = player.getCurrentTime() * 1000;
             let current;
-            for (let i = SKIP_FIRST_X_GPS + (data[i].gpsAdditionalSkip || 0); i < data.length; i++) {
+            for (let i = SKIP_FIRST_X_GPS + (videos[videoIndex].gpsAdditionalSkip || 0); i < data.length; i++) {
                 const pos = {
                     lat: parseFloat(data[i].Latitude),
                     lng: parseFloat(data[i].Longitude),

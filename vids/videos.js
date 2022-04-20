@@ -228,5 +228,42 @@ const videos = [
                 time: 5 * 60 + 21,
             },
         ],
-    }
+    },
+    {
+        id: '3a8ByX60rKw',
+        date: '20.4.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 29 * 60 + 22,
+        time: {
+            h: 18,
+            m: 5,
+        },
+        data: [
+            {
+                file: 'data/6/6-1.csv',
+                time: 0,
+            },
+            {
+                file: 'data/6/6-2.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/6/6-3.csv',
+                time: 5 * 60 + 24,
+            },
+            {
+                file: 'data/6/6-4.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/6/6-5.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/6/6-6.csv',
+                time: 5 * 60 + 23,
+            },
+        ],
+    },
 ];

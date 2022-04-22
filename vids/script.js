@@ -32,7 +32,7 @@ async function fetchData(index) {
 
     for (const dataFile of dataFiles) {
         const resp = await fetch(dataFile.file);
-        const text = await resp.text();
+        const text = (await resp.text()).replace(/\r/g, '');
         const json = csvToJson(text);
         json.forEach(line => {
             line.Milliseconds =

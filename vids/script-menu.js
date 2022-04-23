@@ -64,12 +64,8 @@ async function prepareMenu() {
 
         const btn = document.createElement('div');
         btn.classList.add('video-tile');
+        btn.classList.add('carousel-cell');
         btn.style.backgroundImage = `url(${getVideoThumbnailUrl(data[i].id)})`;
-
-        btn.addEventListener('click', () => {
-            const url = window.location.href.split('#');
-            window.location = url[0] + '?x=1#' + i;
-        });
 
         btn.addEventListener('mouseenter', () => {
             data[i].line.setOptions({
@@ -90,7 +86,7 @@ async function prepareMenu() {
 
         const dateText = document.createElement('div');
         dateText.classList.add('date-text');
-        dateText.innerHTML = `${data[i].date}`
+        dateText.innerHTML = `${data[i].date}`;
         btn.append(dateText);
 
         const typeText = document.createElement('i');
@@ -114,31 +110,43 @@ async function prepareMenu() {
 
         const speedText = document.createElement('div');
         speedText.classList.add('speed-text');
-        speedText.innerHTML = `${data[i].speed}x`
+        speedText.innerHTML = `${data[i].speed}x`;
         btn.append(speedText);
 
         const timeText = document.createElement('div');
         timeText.classList.add('time-text');
         const h = Math.floor(data[i].length / 60 / 60);
-        const m = Math.floor((data[i].length - h * 60) / 60);
+        const m = Math.floor((data[i].length - h * 60 * 60) / 60);
         const s = data[i].length - h * 60 * 60 - m * 60;
-        timeText.innerHTML = `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`
+        timeText.innerHTML = `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
         btn.append(timeText);
 
         const distanceText = document.createElement('div');
         distanceText.classList.add('distance-text');
-        distanceText.innerHTML = `${(data[i].dist / 1000).toFixed(2)} km`
+        distanceText.innerHTML = `${(data[i].dist / 1000).toFixed(2)} km`;
         btn.append(distanceText);
 
         const distanceMiText = document.createElement('div');
         distanceMiText.classList.add('distance-mi-text');
-        distanceMiText.innerHTML = `${data[i].speed}x`
-        distanceMiText.innerHTML = `${(data[i].dist / 1000  * 0.621371192).toFixed(2)} mi`
+        distanceMiText.innerHTML = `${data[i].speed}x`;
+        distanceMiText.innerHTML = `${((data[i].dist / 1000) * 0.621371192).toFixed(2)} mi`;
         btn.append(distanceMiText);
 
         const menu = document.getElementById('menu');
         menu.append(btn);
     }
+
+    const flickity = new Flickity('.carousel', {
+        groupCells: true,
+    });
+
+    flickity.on('staticClick', (event, pointer, cellElement, cellIndex) => {
+        if (cellIndex == null) {
+            return;
+        }
+        const url = window.location.href.split('#');
+        window.location = url[0] + '?x=1#' + cellIndex;
+    });
 
     map.fitBounds(bounds, 50);
 

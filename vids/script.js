@@ -1,6 +1,6 @@
 const videoIndex = parseInt((document.location.hash || '').substring(1, 1000));
 
-const SKIP_FIRST_X_GPS = 250;
+const SKIP_FIRST_X_GPS = 500;
 
 function csvToJson(csv) {
     const lines = csv.split('\n');
@@ -36,7 +36,7 @@ async function fetchData(index) {
         const json = csvToJson(text);
         json.forEach(line => {
             line.Milliseconds =
-                parseInt(line.Milliseconds, 10) / videos[index].speed + (dataFile.time + previousTimeTotal) * 1000;
+                (parseInt(line.Milliseconds, 10) + (dataFile.adjust || 0)) / videos[index].speed + (dataFile.time + previousTimeTotal) * 1000;
             line.TimeIrl = dataFile.timeIrl;
             line.StartTimeSec = dataFile.time + previousTimeTotal;
         });

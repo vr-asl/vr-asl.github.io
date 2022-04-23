@@ -121,10 +121,21 @@ html {
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#menu .flickity-page-dots {
+    bottom: 2px;
+}
+
+#menu .flickity-page-dots .dot {
+    background: var(--color-4);
 }
 
 .menu #menu {
-    display: flex;
+    display: block;
 }
 
 #menu .video-tile {
@@ -138,20 +149,12 @@ html {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%);
 }
 
-#menu {
-    position: absolute;
-    bottom: 0;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #menu .video-tile {
     width: 320px;
     height: 160px;
     margin: 10px;
+    min-width: 320px;
+    min-height: 160px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

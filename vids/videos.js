@@ -169,7 +169,7 @@ const videos = [
             h: 16,
             m: 31,
         },
-        gpsAdditionalSkip: 330,
+        gpsAdditionalSkip: 80,
         data: [
             {
                 file: 'data/5a.csv',
@@ -272,7 +272,7 @@ const videos = [
         type: 'bicycle',
         speed: 2,
         length: 52 * 60 + 18,
-        gpsAdditionalSkip: 330,
+        gpsAdditionalSkip: 80,
         time: {
             h: 18,
             m: 37,
@@ -335,5 +335,92 @@ const videos = [
                 time: 5 * 60 + 20,
             },
         ],
+    },
+    {
+        id: 'pXfO3M1N9fI',
+        date: '23.4.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 61 * 60 + 0,
+        gpsAdditionalSkip: 80,
+        time: {
+            h: 15,
+            m: 16,
+        },
+        data: [
+            {
+                file: 'data/8/1-1-gps-short.csv',
+                time: 0,
+                adjust: -205027203629,
+            },
+            {
+                file: 'data/8/1-2-gps-short.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/8/2-1-gps-short.csv',
+                time: 1 * 60 + 19,
+                timeIrl: {
+                    h: 15,
+                    m: 31,
+                },
+            },
+            {
+                file: 'data/8/2-2-gps-short.csv',
+                time: 5 * 60 + 24,
+            },
+            {
+                file: 'data/8/3-1-gps-short.csv',
+                time: 1 * 60 + 13,
+                timeIrl: {
+                    h: 15,
+                    m: 46,
+                },
+            },
+            {
+                file: 'data/8/3-2-gps-short.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/8/4-1-gps-short.csv',
+                time: 3 * 60 + 53,
+                timeIrl: {
+                    h: 16,
+                    m: 6,
+                },
+            },
+            {
+                file: 'data/8/4-2-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/8/4-3-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/8/5-1-gps-short.csv',
+                time: 3 * 60 + 22,
+                timeIrl: {
+                    h: 16,
+                    m: 36,
+                },
+            },
+            {
+                file: 'data/8/5-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/8/5-3-gps-short.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/8/5-4-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/8/5-5-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+        ]
     },
 ];

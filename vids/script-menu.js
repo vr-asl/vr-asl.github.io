@@ -102,6 +102,9 @@ async function prepareMenu() {
             case 'unicycle':
                 typeText.classList.add('fa-tire');
                 break;
+            case 'bus':
+                typeText.classList.add('fa-bus');
+                break;
             default:
                 typeText.classList.add('fa-question');
                 break;

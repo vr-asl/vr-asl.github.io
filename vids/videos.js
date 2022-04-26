@@ -481,4 +481,54 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'HnrUELyCpyc',
+        date: '26.4.2022',
+        type: 'bus',
+        speed: 1,
+        length: 35 * 60 + 18,
+        gpsAdditionalSkip: 700,
+        time: {
+            h: 9,
+            m: 33,
+        },
+        data: [
+            {
+                file: 'data/10/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/10/1-2-gps-short.csv',
+                time: 11 * 60 + 49,
+            },
+            {
+                file: 'data/10/2-1-gps-short.csv',
+                time: 0 * 60 + 31,
+                timeIrl: {
+                    h: 9,
+                    m: 47,
+                },
+            },
+            {
+                file: 'data/10/3-1-gps-short.csv',
+                time: 4 * 60 + 56,
+                timeIrl: {
+                    h: 9,
+                    m: 57,
+                },
+            },
+            {
+                file: 'data/10/4-1-gps-short.csv',
+                time: 3 * 60 + 0,
+                timeIrl: {
+                    h: 10,
+                    m: 7,
+                },
+            },
+            {
+                file: 'data/10/4-2-gps-short.csv',
+                time: 11 * 60 + 50,
+            },
+        ],
+    },
 ];

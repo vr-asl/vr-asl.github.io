@@ -531,4 +531,46 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'bU6eD5H2DHo',
+        date: '27.4.2022',
+        type: 'walking',
+        speed: 1,
+        length: 40 * 60 + 34,
+        gpsAdditionalSkip: 330,
+        time: {
+            h: 11,
+            m: 22,
+        },
+        data: [
+            {
+                file: 'data/11/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/11/2-1-gps-short.csv',
+                time: 11 * 60 + 19,
+                timeIrl: {
+                    h: 11,
+                    m: 37,
+                },
+            },
+            {
+                file: 'data/11/3-1-gps-short.csv',
+                time: 0 * 60 + 7,
+                timeIrl: {
+                    h: 11,
+                    m: 40,
+                },
+            },
+            {
+                file: 'data/11/3-2-gps-short.csv',
+                time: 11 * 60 + 52,
+            },
+            {
+                file: 'data/11/3-3-gps-short.csv',
+                time: 11 * 60 + 51,
+            },
+        ],
+    },
 ];

@@ -573,4 +573,82 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'dq5RUicNJxM',
+        date: '30.4.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 33 * 60 + 26,
+        gpsAdditionalSkip: 0,
+        time: {
+            h: 18,
+            m: 50,
+        },
+        data: [
+            {
+                file: 'data/12/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/12/1-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/12/2-1-gps-short.csv',
+                time: 0 * 60 + 42,
+                timeIrl: {
+                    h: 19,
+                    m: 3,
+                },
+            },
+            {
+                file: 'data/12/2-2-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/12/3-1-gps-short.csv',
+                time: 0 * 60 + 8,
+                timeIrl: {
+                    h: 19,
+                    m: 14,
+                },
+            },
+            {
+                file: 'data/12/4-1-gps-short.csv',
+                time: 3 * 60 + 56,
+                timeIrl: {
+                    h: 19,
+                    m: 21,
+                },
+            },
+            {
+                file: 'data/12/5-1-gps-short.csv',
+                time: 2 * 60 + 0,
+                timeIrl: {
+                    h: 19,
+                    m: 26,
+                },
+            },
+            {
+                file: 'data/12/6-1-gps-short.csv',
+                time: 5 * 60 + 20,
+                timeIrl: {
+                    h: 19,
+                    m: 38,
+                },
+            },
+            {
+                file: 'data/12/6-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/12/7-1-gps-short.csv',
+                time: 4 * 60 + 8,
+                timeIrl: {
+                    h: 19,
+                    m: 57,
+                },
+            },
+        ],
+    },
 ];

@@ -653,7 +653,7 @@ const videos = [
     },
     {
         id: 'vbQFmGvma7E',
-        date: '30.4.2022',
+        date: '1.5.2022',
         type: 'bicycle',
         speed: 2,
         length: 41 * 60 + 46,
@@ -710,6 +710,32 @@ const videos = [
             {
                 file: 'data/13/4-2-gps-short.csv',
                 time: 5 * 60 + 21,
+            },
+        ],
+    },
+    {
+        id: 'SoywRQR8yFY',
+        date: '2.5.2022',
+        type: 'walking',
+        speed: 1,
+        length: 18 * 60 + 35,
+        gpsAdditionalSkip: 700,
+        time: {
+            h: 19,
+            m: 6,
+        },
+        data: [
+            {
+                file: 'data/14/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/14/1-2-gps-short.csv',
+                time: 8 * 60 + 52,
+            },
+            {
+                file: 'data/14/1-3-gps-short.csv',
+                time: 8 * 60 + 53,
             },
         ],
     },

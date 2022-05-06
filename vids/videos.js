@@ -849,4 +849,63 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'QttJbmGUB-w',
+        date: '5.5.2022',
+        type: 'walking',
+        speed: 1,
+        length: 70 * 60 + 38,
+        gpsAdditionalSkip: 3000,
+        time: {
+            h: 18,
+            m: 8,
+        },
+        data: [
+            {
+                file: 'data/16/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+                adjust: -206640434919,
+            },
+            {
+                file: 'data/16/1-2-gps-short.csv',
+                time: 8 * 60 + 52,
+            },
+            {
+                file: 'data/16/1-3-gps-short.csv',
+                time: 8 * 60 + 53,
+            },
+            {
+                file: 'data/16/2-1-gps-short.csv',
+                time: 4 * 60 + 2,
+                timeIrl: {
+                    h: 18,
+                    m: 32,
+                }
+            },
+            {
+                file: 'data/16/2-2-gps-short.csv',
+                time: 8 * 60 + 53,
+            },
+            {
+                file: 'data/16/2-3-gps-short.csv',
+                time: 8 * 60 + 54,
+            },
+            {
+                file: 'data/16/2-4-gps-short.csv',
+                time: 8 * 60 + 53,
+            },
+            {
+                file: 'data/16/3-1-gps-short.csv',
+                time: 2 * 60 + 53,
+                timeIrl: {
+                    h: 19,
+                    m: 3,
+                }
+            },
+            {
+                file: 'data/16/3-2-gps-short.csv',
+                time: 8 * 60 + 53,
+            },
+        ],
+    },
 ];

@@ -880,7 +880,7 @@ const videos = [
                 timeIrl: {
                     h: 18,
                     m: 32,
-                }
+                },
             },
             {
                 file: 'data/16/2-2-gps-short.csv',
@@ -900,11 +900,51 @@ const videos = [
                 timeIrl: {
                     h: 19,
                     m: 3,
-                }
+                },
             },
             {
                 file: 'data/16/3-2-gps-short.csv',
                 time: 8 * 60 + 53,
+            },
+        ],
+    },
+    {
+        id: 'L3R8_TPtptk',
+        date: '6.5.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 42 * 60 + 20,
+        gpsAdditionalSkip: 0,
+        time: {
+            h: 19,
+            m: 1,
+        },
+        data: [
+            {
+                file: 'data/17/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/17/1-2-gps-short.csv',
+                time: 5 * 60 + 21,
+            },{
+                file: 'data/17/1-3-gps-short.csv',
+                time: 5 * 60 + 20,
+            },{
+                file: 'data/17/1-4-gps-short.csv',
+                time: 5 * 60 + 20,
+            },{
+                file: 'data/17/1-5-gps-short.csv',
+                time: 5 * 60 + 20,
+            },{
+                file: 'data/17/1-6-gps-short.csv',
+                time: 5 * 60 + 21,
+            },{
+                file: 'data/17/1-7-gps-short.csv',
+                time: 5 * 60 + 20,
+            },{
+                file: 'data/17/1-8-gps-short.csv',
+                time: 5 * 60 + 20,
             },
         ],
     },

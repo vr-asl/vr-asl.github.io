@@ -71,7 +71,7 @@ async function fetchData(index) {
         });
         json = json.filter(item => item.Milliseconds >= 0);
         previousTimeTotal += dataFile.time;
-        data = [...data, ...json];
+        data = [...data, ...(videos[index].gpsRemoveFromEnd ? json.slice(0,  -videos[index].gpsRemoveFromEnd) : json)];
     }
 
     return data;

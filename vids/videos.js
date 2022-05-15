@@ -1146,4 +1146,43 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'Nl3BLuY-Bos',
+        date: '15.5.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 29 * 60 + 13,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 17,
+            m: 18,
+        },
+        data: [
+            {
+                file: 'data/23/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/23/1-2-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/23/1-3-gps-short.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/23/1-4-gps-short.csv',
+                time: 5 * 60 + 23,
+            },
+            {
+                file: 'data/23/1-5-gps-short.csv',
+                time: 5 * 60 + 24,
+            },
+            {
+                file: 'data/23/1-6-gps-short.csv',
+                time: 5 * 60 + 24,
+            },
+        ],
+    },
 ];

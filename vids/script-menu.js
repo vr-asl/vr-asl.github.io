@@ -1,15 +1,19 @@
-async function fetchVideos() {
+function fetchVideos() {
     let data = [];
+    const promises = [];
 
-    for (const index in videos) {
-        const resp = await fetchData(index);
-        data.push({
-            ...videos[index],
-            gps: resp,
-        });
+    for (let i = 0; i < videos.length; i++) {
+        promises.push(
+            fetchData(i).then(resp => {
+                data[i] = {
+                    ...videos[i],
+                    gps: resp,
+                };
+            }),
+        );
     }
 
-    return data;
+    return Promise.all(promises).then(() => data);
 }
 
 async function prepareMenu() {
@@ -24,6 +28,8 @@ async function prepareMenu() {
     document.body.classList.add('menu');
 
     const data = await fetchVideos();
+
+    console.log(data);
 
     const bounds = new google.maps.LatLngBounds();
     for (let i = 0; i < data.length; i++) {

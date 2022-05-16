@@ -169,7 +169,7 @@ const videos = [
             h: 16,
             m: 31,
         },
-        gpsAdditionalSkip: 80,
+        gpsAdditionalSkip: 16,
         data: [
             {
                 file: 'data/5a.csv',
@@ -272,7 +272,7 @@ const videos = [
         type: 'bicycle',
         speed: 2,
         length: 52 * 60 + 18,
-        gpsAdditionalSkip: 80,
+        gpsAdditionalSkip: 16,
         time: {
             h: 18,
             m: 37,
@@ -342,7 +342,7 @@ const videos = [
         type: 'bicycle',
         speed: 2,
         length: 61 * 60 + 0,
-        gpsAdditionalSkip: 80,
+        gpsAdditionalSkip: 16,
         time: {
             h: 15,
             m: 16,
@@ -487,7 +487,7 @@ const videos = [
         type: 'bus',
         speed: 1,
         length: 35 * 60 + 18,
-        gpsAdditionalSkip: 700,
+        gpsAdditionalSkip: 140,
         time: {
             h: 9,
             m: 33,
@@ -537,7 +537,7 @@ const videos = [
         type: 'walking',
         speed: 1,
         length: 40 * 60 + 34,
-        gpsAdditionalSkip: 330,
+        gpsAdditionalSkip: 66,
         time: {
             h: 11,
             m: 22,
@@ -657,7 +657,7 @@ const videos = [
         type: 'bicycle',
         speed: 2,
         length: 41 * 60 + 46,
-        gpsAdditionalSkip: 100,
+        gpsAdditionalSkip: 20,
         time: {
             h: 16,
             m: 59,
@@ -719,7 +719,7 @@ const videos = [
         type: 'walking',
         speed: 1,
         length: 18 * 60 + 35,
-        gpsAdditionalSkip: 700,
+        gpsAdditionalSkip: 140,
         time: {
             h: 19,
             m: 6,
@@ -855,7 +855,7 @@ const videos = [
         type: 'walking',
         speed: 1,
         length: 70 * 60 + 38,
-        gpsAdditionalSkip: 3000,
+        gpsAdditionalSkip: 600,
         time: {
             h: 18,
             m: 8,
@@ -1046,7 +1046,7 @@ const videos = [
         type: 'walking',
         speed: 1,
         length: 49 * 60 + 11,
-        gpsAdditionalSkip: -480,
+        gpsAdditionalSkip: -80,
         time: {
             h: 20,
             m: 52,
@@ -1065,7 +1065,7 @@ const videos = [
         type: 'walking',
         speed: 1,
         length: 35 * 60 + 47,
-        gpsAdditionalSkip: -480,
+        gpsAdditionalSkip: -80,
         gpsRemoveFromEnd: 200,
         time: {
             h: 20,
@@ -1085,7 +1085,7 @@ const videos = [
         type: 'walking',
         speed: 1,
         length: 108 * 60 + 26,
-        gpsAdditionalSkip: -480,
+        gpsAdditionalSkip: -80,
         gpsRemoveFromEnd: 0,
         time: {
             h: 18,

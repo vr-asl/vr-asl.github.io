@@ -1,6 +1,6 @@
 const videoIndex = parseInt((document.location.hash || '').substring(1, 1000));
 
-const SKIP_FIRST_X_GPS = 500;
+const SKIP_FIRST_X_GPS = 100;
 
 function csvToJson(csv) {
     const lines = csv.split('\n');

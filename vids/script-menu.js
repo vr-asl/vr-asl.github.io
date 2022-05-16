@@ -29,8 +29,6 @@ async function prepareMenu() {
 
     const data = await fetchVideos();
 
-    console.log(data);
-
     const bounds = new google.maps.LatLngBounds();
     for (let i = 0; i < data.length; i++) {
         const path = [];

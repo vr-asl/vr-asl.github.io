@@ -96,6 +96,7 @@ async function prepareMenu() {
         const typeText = document.createElement('i');
         typeText.classList.add('type-text');
         typeText.classList.add('fa-solid');
+        typeText.style.display = 'block';
         switch (data[i].type) {
             case 'bicycle':
                 typeText.classList.add('fa-person-biking');
@@ -108,6 +109,9 @@ async function prepareMenu() {
                 break;
             case 'bus':
                 typeText.classList.add('fa-bus');
+                break;
+            case '':
+                typeText.style.display = 'none';
                 break;
             default:
                 typeText.classList.add('fa-question');

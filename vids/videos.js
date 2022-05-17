@@ -1219,4 +1219,24 @@ const videos = [
         },
         data: [],
     },
+    {
+        id: 'Uo36X0G6PIk',
+        date: '17.5.2022',
+        type: 'walking',
+        speed: 1,
+        length: 14 * 60 + 26,
+        gpsAdditionalSkip: -90,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 16,
+            m: 2,
+        },
+        data: [
+            {
+                file: 'data/27.gpx',
+                gpx: true,
+                gpxAdjust: 2 * 60 * 60 * 1000,
+            },
+        ],
+    },
 ];

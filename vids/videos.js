@@ -1239,4 +1239,56 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'shyaddwgpD4',
+        date: '17.5.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 38 * 60 + 19,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 18,
+            m: 34,
+        },
+        data: [
+            {
+                file: 'data/28/1-1.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/28/2-1.csv',
+                time: 5 * 60 + 2,
+                timeIrl: {
+                    h: 18,
+                    m: 45,
+                },
+            },
+
+            {
+                file: 'data/28/2-2.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/28/2-3.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/28/2-4.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/28/2-5.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/28/2-6.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/28/2-7.csv',
+                time: 5 * 60 + 22,
+            },
+        ],
+    },
 ];

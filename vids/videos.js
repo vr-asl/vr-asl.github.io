@@ -1305,4 +1305,18 @@ const videos = [
         },
         data: [],
     },
+    {
+        id: '7W57Ty130nM',
+        date: '19.5.2022',
+        type: '',
+        speed: 125,
+        length: 13 * 60 + 43,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 18,
+            m: 29,
+        },
+        data: [],
+    },
 ];

@@ -1378,4 +1378,18 @@ const videos = [
             },
         ],
     },
+    {
+        id: '6IEuX3I19XU',
+        date: '20.5.2022',
+        type: '',
+        speed: 125,
+        length: 26 * 60 + 46,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 20,
+            m: 55,
+        },
+        data: [],
+    },
 ];

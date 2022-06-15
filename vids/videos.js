@@ -1868,4 +1868,87 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'yS5CnWhXPVc',
+        date: '14.6.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 63 * 60 + 3,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 19,
+            m: 10,
+        },
+        data: [
+            {
+                file: 'data/46/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/46/1-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/46/1-3-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/46/1-4-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/46/2-1-gps-short.csv',
+                time: 4 * 60 + 14,
+                timeIrl: {
+                    h: 19,
+                    m: 53,
+                },
+            },
+            {
+                file: 'data/46/2-2-gps-short.csv',
+                time: 8 * 60 + 53,
+            },
+            {
+                file: 'data/46/2-3-gps-short.csv',
+                time: 8 * 60 + 52,
+            },
+            {
+                file: 'data/46/3-1-gps-short.csv',
+                time: 3 * 60 + 44,
+                timeIrl: {
+                    h: 20,
+                    m: 24,
+                },
+            },
+            {
+                file: 'data/46/4-1-gps-short.csv',
+                time: 1 * 60 + 38,
+                timeIrl: {
+                    h: 20,
+                    m: 28,
+                },
+            },
+            {
+                file: 'data/46/5-1-gps-short.csv',
+                time: 2 * 60 + 18,
+                timeIrl: {
+                    h: 20,
+                    m: 33,
+                },
+            },
+            {
+                file: 'data/46/5-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/46/5-3-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/46/5-4-gps-short.csv',
+                time: 5 * 60 + 19,
+            },
+        ],
+    },
 ];

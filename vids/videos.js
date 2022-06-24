@@ -2010,4 +2010,67 @@ const videos = [
             },
         ],
     },
+    {
+        id: 'FA-6dEueiZQ',
+        date: '23.6.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 42 * 60 + 22,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 18,
+            m: 30,
+        },
+        data: [
+            {
+                file: 'data/50/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/50/1-2-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/50/1-3-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/50/1-4-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/50/2-1-gps-short.csv',
+                time: 3 * 60 + 24,
+                timeIrl: {
+                    h: 19,
+                    m: 9,
+                },
+            },
+            {
+                file: 'data/50/3-1-gps-short.csv',
+                time: 0 * 60 + 15,
+                timeIrl: {
+                    h: 19,
+                    m: 44,
+                },
+            },
+            {
+                file: 'data/50/3-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/50/3-3-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/50/3-4-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/50/3-5-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+        ],
+    },
 ];

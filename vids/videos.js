@@ -2263,7 +2263,7 @@ const videos = [
         ]
     },
     {
-        id: 'Uo36X0G6PIk',
+        id: 'Dxtzi2iWD8w',
         date: '5.7.2022',
         type: 'walking',
         speed: 1,

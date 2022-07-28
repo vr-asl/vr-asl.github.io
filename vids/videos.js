@@ -2734,7 +2734,6 @@ const videos = [
             },
         ]
     },
-
     {
         id: '70aSigUxhmA',
         date: '20.7.2022',
@@ -2790,7 +2789,6 @@ const videos = [
             },
         ]
     },
-
     {
         id: 'kFw61ow9veg',
         date: '24.7.2022',
@@ -2809,5 +2807,134 @@ const videos = [
                 time: 0 * 60 + 0,
             },
         ]
+    },
+    {
+        id: 'E4GX0cjJPE8',
+        date: '25.7.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 43 * 60 + 12,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 19,
+            m: 7,
+        },
+        data: [
+            {
+                file: 'data/66/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/66/1-2-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/66/1-3-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/66/1-4-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/66/2-1-gps-short.csv',
+                time: 4 * 60 + 57,
+                timeIrl: {
+                    h: 20,
+                    m: 22,
+                },
+            },
+            {
+                file: 'data/66/2-2-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/66/2-3-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/66/2-4-gps-short.csv',
+                time: 5 * 60 + 19,
+            },
+            {
+                file: 'data/66/2-5-gps-short.csv',
+                time: 5 * 60 + 19,
+            },
+        ]
+    },
+    {
+        id: 'aF5z43sdaZI',
+        date: '26.7.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 42 * 60 + 12,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 17,
+            m: 55,
+        },
+        data: [
+            {
+                file: 'data/67/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/67/1-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/67/1-3-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/67/1-4-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/67/2-1-gps-short.csv',
+                time: 4 * 60 + 29,
+                timeIrl: {
+                    h: 19,
+                    m: 7,
+                },
+            },
+            {
+                file: 'data/67/2-2-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/67/2-3-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/67/2-4-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/67/2-5-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+        ]
+    },
+    {
+        id: 'E0jvAEQpO2E',
+        date: '27.7.2022',
+        type: 'walking',
+        speed: 1,
+        length: 42 * 60 + 33,
+        gpsAdditionalSkip: -80,
+        time: {
+            h: 18,
+            m: 24,
+        },
+        data: [
+            {
+                file: 'data/68.gpx',
+                gpx: true,
+                gpxAdjust: 2 * 60 * 60 * 1000,
+            },
+        ],
     },
 ];

@@ -2205,7 +2205,7 @@ const videos = [
                 file: 'data/52/2-4-gps-short.csv',
                 time: 5 * 60 + 20,
             },
-        ]
+        ],
     },
     {
         id: 'f0veP8KFChE',
@@ -2260,7 +2260,7 @@ const videos = [
                 file: 'data/53/2-5-gps-short.csv',
                 time: 5 * 60 + 20,
             },
-        ]
+        ],
     },
     {
         id: 'Dxtzi2iWD8w',
@@ -2339,7 +2339,7 @@ const videos = [
                 file: 'data/55/2-5-gps-short.csv',
                 time: 5 * 60 + 19,
             },
-        ]
+        ],
     },
     {
         id: '6WIUXzJ15r0',
@@ -2414,7 +2414,7 @@ const videos = [
                 file: 'data/57/2-4-gps-short.csv',
                 time: 5 * 60 + 20,
             },
-        ]
+        ],
     },
     {
         id: 'XLOksKP3xLk',
@@ -2469,7 +2469,7 @@ const videos = [
                 file: 'data/58/2-5-gps-short.csv',
                 time: 5 * 60 + 22,
             },
-        ]
+        ],
     },
     {
         id: '-0cNqNWfL44',
@@ -2536,7 +2536,7 @@ const videos = [
                 file: 'data/59/3-5-gps-short.csv',
                 time: 5 * 60 + 19,
             },
-        ]
+        ],
     },
     {
         id: '3kC3V4ZmU_g',
@@ -2587,7 +2587,7 @@ const videos = [
                 file: 'data/60/2-4-gps-short.csv',
                 time: 5 * 60 + 19,
             },
-        ]
+        ],
     },
     {
         id: 'm9PENrIZdm0',
@@ -2630,7 +2630,7 @@ const videos = [
                 file: 'data/61/1-7-gps-short.csv',
                 time: 5 * 60 + 20,
             },
-        ]
+        ],
     },
     {
         id: 'WUbZngRZKbQ',
@@ -2681,7 +2681,7 @@ const videos = [
                 file: 'data/62/2-4-gps-short.csv',
                 time: 5 * 60 + 19,
             },
-        ]
+        ],
     },
     {
         id: '423MrkCjGdc',
@@ -2732,7 +2732,7 @@ const videos = [
                 file: 'data/63/2-4-gps-short.csv',
                 time: 5 * 60 + 20,
             },
-        ]
+        ],
     },
     {
         id: '70aSigUxhmA',
@@ -2787,7 +2787,7 @@ const videos = [
                 file: 'data/64/2-5-gps-short.csv',
                 time: 5 * 60 + 21,
             },
-        ]
+        ],
     },
     {
         id: 'kFw61ow9veg',
@@ -2806,7 +2806,7 @@ const videos = [
                 file: 'data/65/1-1-gps-short.csv',
                 time: 0 * 60 + 0,
             },
-        ]
+        ],
     },
     {
         id: 'E4GX0cjJPE8',
@@ -2861,7 +2861,7 @@ const videos = [
                 file: 'data/66/2-5-gps-short.csv',
                 time: 5 * 60 + 19,
             },
-        ]
+        ],
     },
     {
         id: 'aF5z43sdaZI',
@@ -2916,7 +2916,7 @@ const videos = [
                 file: 'data/67/2-5-gps-short.csv',
                 time: 5 * 60 + 20,
             },
-        ]
+        ],
     },
     {
         id: 'E0jvAEQpO2E',
@@ -3030,6 +3030,97 @@ const videos = [
                 file: 'data/77/4-7-gps-short.csv',
                 time: 5 * 60 + 21,
             },
-        ]
+        ],
+    },
+    // TODO 78
+    // TODO 79
+    // TODO 80
+    // TODO 81
+    {
+        id: '0Gjms54RTaU',
+        date: '13.8.2022',
+        type: 'bicycle',
+        speed: 2,
+        length: 68 * 60 + 54,
+        gpsAdditionalSkip: 0,
+        gpsRemoveFromEnd: 0,
+        time: {
+            h: 14,
+            m: 8,
+        },
+        data: [
+            {
+                file: 'data/82/1-1-gps-short.csv',
+                time: 0 * 60 + 0,
+            },
+            {
+                file: 'data/82/1-2-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/82/1-3-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/82/1-4-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/82/1-5-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/82/1-6-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/82/2-1-gps-short.csv',
+                time: 3 * 60 + 39,
+                timeIrl: {
+                    h: 15,
+                    m: 13,
+                },
+            },
+            {
+                file: 'data/82/3-1-gps-short.csv',
+                time: 2 * 60 + 44,
+                timeIrl: {
+                    h: 15,
+                    m: 54,
+                },
+            },
+            {
+                file: 'data/82/3-2-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+            {
+                file: 'data/82/4-1-gps-short.csv',
+                time: 2 * 60 + 38,
+                timeIrl: {
+                    h: 16,
+                    m: 13,
+                },
+            },
+            {
+                file: 'data/82/4-2-gps-short.csv',
+                time: 5 * 60 + 20,
+            },
+            {
+                file: 'data/82/4-3-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/82/4-4-gps-short.csv',
+                time: 5 * 60 + 19,
+            },
+            {
+                file: 'data/82/4-5-gps-short.csv',
+                time: 5 * 60 + 21,
+            },
+            {
+                file: 'data/82/4-6-gps-short.csv',
+                time: 5 * 60 + 22,
+            },
+        ],
     },
 ];
